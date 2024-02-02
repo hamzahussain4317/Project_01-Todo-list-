@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos page</title>
+    <style>
+        body {
+            background-color: #344a72;
+            color: white;
+        }
+
+        #todoname {
+            padding: 0.5rem 0rem;
+            padding-right:3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        #tododesc {
+            padding: 0.5rem 0rem;
+            margin-bottom: 0.3rem;
+            padding-right:3rem;
+        }
+
+        #todostatus {
+            padding: 0.5rem 0rem;
+            margin-bottom: 0.5rem;
+            padding-right:3rem;
+        }
+
+        #todopriority {
+            padding: 0.2rem 0rem;
+            margin-bottom: 0.5rem;
+            padding-right:3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="intro">
+    </div>
+    <label>
+        Search todo's by name <input id="render-todos" type="text" placeholder="search a todo">
+    </label>
+    
+    
+        <div id="todosort">
+            <h1>Sort Your Todos</h1>
+            <select id="todosort">
+                <option value="default">Default</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+        </div>
+    
+    <h2>Your Todo's are:</h2>
+    <div id="your-todo">
+        
+    </div>
+
+    <h2>Form To add new todo</h2>
+    <form id="todo-form">
+        <div id="todoname">
+            <label>
+                Todo Name <br> <input id="todoname" type="text" name="todoname" placeholder="Enter Todo Name">
+            </label>
+            <br>
+        </div>
+
+        <div id="tododesc">
+            <label>
+                Todo Detail <br> <textarea name="tododesc" id="tododesc" cols="20" rows="3"
+                    placeholder="todo details"></textarea>
+            </label>
+            <br>
+        </div>
+
+        <div id="todostatus">
+            <label >Status</label>
+            <br>
+            <select id="status">
+                <option value="completed">completed</option>
+                <option value="not-completed">not completed</option>
+            </select>
+        </div>
+        <div id="todopriority">
+            <label >Priority</label>
+            <br>
+            <select id="todopriority">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+        </div>
+
+        <div id="submit-btn">
+            <button type="Submit" id="submit" name="submit">Submit</button>
+        </div>
+
+    </form>
+    <script src="login-signup.js"></script>
+</body>
+
+</html>
